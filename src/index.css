@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@import "tailwindcss";
+
+* {
+  font-family: 'Outfit', sans-serif;
+}
+
+@layer base {
+  button {
+    @apply cursor-pointer;
+  }
+}
+
+/* ✅ Animation CSS (correct way) */
+@keyframes marqueeScroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-inner {
+  animation: marqueeScroll 25s linear infinite;
+}
+
+.marquee-reverse {
+  animation-direction: reverse;
+}
