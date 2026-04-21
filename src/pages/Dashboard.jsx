@@ -141,8 +141,6 @@ const Dashboard = () => {
                                <input type="file" id='resume-input' accept='.pdf' hidden
                                         onChange={(e)=> setResume(e.target.files[0])}/>
                             </div>
-
-
                             <button className="w-full py-2 bg-green-600 text-white rounded hover:bg-green-700 transition-colors">
                                 Update
                             </button>
