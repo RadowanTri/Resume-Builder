@@ -1,10 +1,11 @@
 import { Lock, Mail, User2Icon } from "lucide-react";
 import React from "react";
-import { useSearchParams } from "react-router-dom";
+import { useSearchParams, useNavigate } from "react-router-dom";
 
 const Login = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const urlState = searchParams.get("state") || "login";
+  const navigate = useNavigate();
 
   const [formData, setFormData] = React.useState({
     name: "",
@@ -14,6 +15,14 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    // Here you would normally handle authentication logic
+    // For now, just redirect to dashboard after login
+    if (urlState === "login") {
+      navigate("/app");
+    } else {
+      // Optionally handle signup logic
+      setSearchParams({ state: "login" });
+    }
   };
 
   const handleChange = (e) => {
