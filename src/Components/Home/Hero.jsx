@@ -117,31 +117,35 @@ const Hero = () => {
         </a>
 
         <div className="hidden md:flex items-center gap-8 transition duration-500 text-slate-800">
-          <a href="#" className="hover:text-green-600 transition">
+        <Link to="/" className="hover:text-green-600 transition">
             Home
-          </a>
-          <a href="#features" className="hover:text-green-600 transition">
+          </Link>
+          <Link to="/#features" className="hover:text-green-600 transition">
             Features
-          </a>
-          <a href="#pricing" className="hover:text-green-600 transition">
+          </Link>
+          <Link to="/#pricing" className="hover:text-green-600 transition">
             Pricing
-          </a>
-          <a href="#testimonials" className="hover:text-green-600 transition">
+          </Link>
+          <Link to="/#testimonials" className="hover:text-green-600 transition">
             Testimonials
-          </a>
-          <a href="#cta" className="hover:text-green-600 transition">
+          </Link>
+          <Link to="/#cta" className="hover:text-green-600 transition">
             Contact
-          </a>
+          </Link>
+          <Link to="/login" className="hover:text-green-600 transition">
+            Login
+          </Link>
+          
         </div>
 
         <div className="flex gap-2">
-          <Link to='/app?state=register'
-            className="hidden md:block px-6 py-2 bg-green-500 hover:bg-green-700 active:scale-95 transition-all rounded-full text-white"
+          <Link to='/register'
+            className="hidden md:block px-6 py-2 bg-green-500 hover:bg-green-700 active:scale-95 transition-all rounded-full text-white hover:text-green-600"
           >
             Get started
           </Link>
-          <Link  to='/app?state=login'
-            className="hidden md:block px-6 py-2 border active:scale-95 hover:bg-slate-50 transition-all rounded-full text-slate-700 hover:text-slate-900"
+          <Link  to='/login'
+            className="hidden md:block px-6 py-2 border active:scale-95 hover:bg-slate-50 transition-all rounded-full text-slate-700 hover:text-slate-900 hover:text-green-600"
           >
             Login
           </Link>
@@ -169,21 +173,24 @@ const Hero = () => {
       <div
         className={`fixed inset-0 z-[100] bg-black/40 text-black backdrop-blur flex flex-col items-center justify-center text-lg gap-8 md:hidden transition-transform duration-300 ${menuOpen ? "translate-x-0" : "-translate-x-full"}`}
       >
-        <a href="#" className="hover:text-green-600 transition">
+        <Link to="/" className="hover:text-green-600 transition">
             Home
-          </a>
-          <a href="#features" className="hover:text-green-600 transition">
+          </Link>
+          <Link to="/#features" className="hover:text-green-600 transition">
             Features
-          </a>
-          <a href="#pricing" className="hover:text-green-600 transition">
+          </Link>
+          <Link to="/#pricing" className="hover:text-green-600 transition">
             Pricing
-          </a>
-          <a href="#testimonials" className="hover:text-green-600 transition">
+          </Link>
+          <Link to="/#testimonials" className="hover:text-green-600 transition">
             Testimonials
-          </a>
-          <a href="#cta" className="hover:text-green-600 transition">
+          </Link>
+          <Link to="/#cta" className="hover:text-green-600 transition">
             Contact
-          </a>
+          </Link>
+          <Link to="/login" className="bg-green-500 hover:bg-green-600 text-white rounded-full px-7 sm:px-8 h-11 m-1 ring-offset-2 ring-1 ring-green-400 flex items-center transition-colors">
+            Login
+          </Link>
         <button
           onClick={() => setMenuOpen(false)}
           className="active:ring-3 active:ring-white aspect-square size-10 p-1 items-center justify-center bg-green-600 hover:bg-green-700 transition text-white rounded-md flex"
@@ -270,7 +277,7 @@ const Hero = () => {
         {/* CTA Buttons */}
         <div className="flex items-center gap-3 ">
           <a
-            href="/"
+            href="/login"
             className="bg-green-500 hover:bg-green-600 text-white rounded-full px-9 sm:px-4 h-12 m-1 ring-offset-2 ring-1 ring-green-400 flex items-center transition-colors"
           >
             Get started
