@@ -12,7 +12,7 @@ const Navbar = () => {
             <div className='shadow bg-white'>
                 <nav className='flex items-center justify-between max-w-7xl px-4 py-3.5 text-state-800 transition-all'>
                     <Link to='/'>
-                        <img src="./logo.svg" alt="logo" className='h-11 w-auto'/>
+                        <img src="/Resume-Builder/logo.svg" alt="logo" className='h-11 w-auto'/>
                     </Link>
                     <div className='flex items-center justify-center gap-2'>
                         <p className='max-sm:hidden'>Hi {user?.name}</p>
