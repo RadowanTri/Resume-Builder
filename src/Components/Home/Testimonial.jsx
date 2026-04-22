@@ -72,11 +72,11 @@ const Testimonial = () => {
         icon={
           <>
             <ZapIcon width={15} />
-            <span>Features</span>
+            <span>Testimonials</span>
           </>
         }
-        title="Powerful Features"
-        description="Unlock the full potential of your finances with our comprehensive suite of features designed to simplify and enhance your financial management experience."
+        title="Real people, real results"
+        description=" Thousands of job seekers have already landed interviews at top companies using TRI."
       />
 
       <div className="marquee-row w-full mx-auto max-w-5xl overflow-hidden relative">

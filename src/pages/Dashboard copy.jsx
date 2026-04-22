@@ -44,9 +44,9 @@ const Dashboard = () => {
 
             {/* Buttons */}
             <div className='flex gap-4'>
-                <button onClick={()=>setShowCreateResume(true)} className='w-full bg-white sm:max-w-36 h-48 flex flex-col items-center justify-center rounded-lg gap-2 text-slate-600 border border-dashed border-slate-300 group hover:border-indigo-500 hover:shadow-lg transition-all duration-300 cursor-pointer'>
-                    <PlusIcon className='size-11 p-2.5 bg-gradient-to-r from-indigo-500 to-indigo-700 text-white rounded-full' />
-                    <p className='text-sm group-hover:text-indigo-500 transition-all'>Create Resume</p>
+                <button onClick={()=>setShowCreateResume(true)} className='w-full bg-white sm:max-w-36 h-48 flex flex-col items-center justify-center rounded-lg gap-2 text-slate-600 border border-dashed border-slate-300 group hover:border-green-500 hover:shadow-lg transition-all duration-300 cursor-pointer'>
+                    <PlusIcon className='size-11 p-2.5 bg-gradient-to-r from-green-500 to-green-700 text-white rounded-full' />
+                    <p className='text-sm group-hover:text-green-500 transition-all'>Create Resume</p>
                 </button>
 
                 <button onClick={()=> setShowUploadResume(true)} className='w-full bg-white sm:max-w-36 h-48 flex flex-col items-center justify-center rounded-lg gap-2 text-slate-600 border border-dashed border-slate-300 group hover:border-purple-500 hover:shadow-lg transition-all duration-300 cursor-pointer'>

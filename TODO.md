@@ -1,1 +1,7 @@
-# Resume Builder Task: Make Save Changes button advance to next step&#10;&#10;## Plan Breakdown&#10;1. [x] Create TODO.md with steps (done)&#10;2. [x] Edit src/pages/ResumeBuilder.jsx:&#10;   - Add onClick to Save Changes button to advance activeSectionIndex&#10;   - Fix ProjectForm data/onChange to use &#39;projects&#39; consistently&#10;3. [x] Test navigation (changes applied successfully, logic correct per diff)&#10;4. [x] attempt_completion&#10;
+# Fix Login → Dashboard Routing Issue
+
+## Steps:
+- [x] 1. Create TODO.md with plan (done)
+- [x] 2. Edit src/App.jsx to fix ProtectedRoute structure and add Layout/Navbar
+- [x] 3. Test login flow (login → /app → Dashboard with Navbar visible)
+- [x] 4. Mark complete and demo command

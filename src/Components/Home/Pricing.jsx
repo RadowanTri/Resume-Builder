@@ -68,12 +68,14 @@ const Pricing = () => {
           icon={
             <>
               <ZapIcon width={15} />
-              <span>Features</span>
+              <span>Pricing</span>
             </>
           }
-          title="Powerful Features"
-          description="Unlock the full potential of your finances with our comprehensive suite of features designed to simplify and enhance your financial management experience."
+          title={<span className="text-white">Simple Pricing</span>}
+          description={<span className="text-zinc-300">Choose the perfect plan for your needs. No hidden fees, cancel anytime.</span>}
+
         />
+
 
         <div className="flex items-center gap-4 mt-8">
           <span className="text-sm text-white">Monthly</span>

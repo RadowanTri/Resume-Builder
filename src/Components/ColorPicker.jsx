@@ -4,7 +4,7 @@ import { Check, Palette } from "lucide-react";
 const ColorPicker = ({ selectedColor, onChange }) => {
   const colors = [
     { name: "Blue", value: "#3B82F6" },
-    { name: "Indigo", value: "#6366F1" },
+    { name: "green", value: "#6366F1" },
     { name: "Purple", value: "#8B5CF6" },
     { name: "Green", value: "#10B981" },
     { name: "Red", value: "#EF4444" },

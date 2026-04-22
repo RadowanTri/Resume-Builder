@@ -111,9 +111,9 @@ const Hero = () => {
   return (
     <div className="min-h-screen pb-20">
       {/* Navbar */}
-      <nav className="z-50 flex items-center justify-between w-full py-4 px-6 md:px-16 lg:px-24 xl:px-40 text-sm">
+      <nav className="z-50 flex items-center justify-between w-full py-4 px-6 md:px-16 lg:px-24 xl:px-30 text-sm">
         <a href="#">
-            <img src="./logo.svg" alt="Logo" className="h-11 w-auto"/>
+            <img src="./logo.svg" alt="Logo" className="h-16 w-auto"/>
         </a>
 
         <div className="hidden md:flex items-center gap-8 transition duration-500 text-slate-800">
@@ -122,6 +122,9 @@ const Hero = () => {
           </a>
           <a href="#features" className="hover:text-green-600 transition">
             Features
+          </a>
+          <a href="#pricing" className="hover:text-green-600 transition">
+            Pricing
           </a>
           <a href="#testimonials" className="hover:text-green-600 transition">
             Testimonials
@@ -166,18 +169,21 @@ const Hero = () => {
       <div
         className={`fixed inset-0 z-[100] bg-black/40 text-black backdrop-blur flex flex-col items-center justify-center text-lg gap-8 md:hidden transition-transform duration-300 ${menuOpen ? "translate-x-0" : "-translate-x-full"}`}
       >
-        <a href="/" className="text-white">
-          Home
-        </a>
-        <a href="/products" className="text-white">
-          Products
-        </a>
-        <a href="/stories" className="text-white">
-          Stories
-        </a>
-        <a href="/pricing" className="text-white">
-          Pricing
-        </a>
+        <a href="#" className="hover:text-green-600 transition">
+            Home
+          </a>
+          <a href="#features" className="hover:text-green-600 transition">
+            Features
+          </a>
+          <a href="#pricing" className="hover:text-green-600 transition">
+            Pricing
+          </a>
+          <a href="#testimonials" className="hover:text-green-600 transition">
+            Testimonials
+          </a>
+          <a href="#cta" className="hover:text-green-600 transition">
+            Contact
+          </a>
         <button
           onClick={() => setMenuOpen(false)}
           className="active:ring-3 active:ring-white aspect-square size-10 p-1 items-center justify-center bg-green-600 hover:bg-green-700 transition text-white rounded-md flex"

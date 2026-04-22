@@ -1,27 +1,32 @@
 import { Lock, Mail, User2Icon } from "lucide-react";
 import React from "react";
 import { useSearchParams, useNavigate } from "react-router-dom";
+import { useAuth } from "../context/AuthContext";
 
 const Login = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const urlState = searchParams.get("state") || "login";
   const navigate = useNavigate();
+  const { login } = useAuth();
 
   const [formData, setFormData] = React.useState({
     name: "",
     email: "",
     password: "",
   });
+  const [submitting, setSubmitting] = React.useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // Here you would normally handle authentication logic
-    // For now, just redirect to dashboard after login
-    if (urlState === "login") {
-      navigate("/app");
-    } else {
-      // Optionally handle signup logic
-      setSearchParams({ state: "login" });
+    setSubmitting(true);
+    try {
+      // Mock auth - use form data for demo persistence
+      login(formData);
+      navigate("/app", { replace: true });
+    } catch (error) {
+      console.error("Login failed:", error);
+    } finally {
+      setSubmitting(false);
     }
   };
 
@@ -32,6 +37,8 @@ const Login = () => {
 
   const toggleState = () => {
     setSearchParams({ state: urlState === "login" ? "signup" : "login" });
+    // Reset form for new state
+    setFormData({ name: "", email: "", password: "" });
   };
 
   return (
@@ -60,7 +67,6 @@ const Login = () => {
           </div>
         )}
 
-        
         <div className="flex items-center w-full mt-4 bg-white border border-gray-300/80 h-12 rounded-full overflow-hidden pl-6 gap-2">
           <Mail size={16} color="#6B7280" />
           <input
@@ -87,17 +93,25 @@ const Login = () => {
           />
         </div>
 
-        <div className="mt-4 text-left text-indigo-500">
+        <div className="mt-4 text-left text-green-500">
           <button className="text-sm" type="reset">
             Forget password?
           </button>
         </div>
 
+        {/* Demo credentials hint */}
+        <div className="mt-4 p-3 bg-green-50 border border-green-200 rounded-lg">
+          <p className="text-green-800 text-xs mb-1">💡 Demo Login:</p>
+          <p className="text-green-700 text-xs">Email: demo@example.com</p>
+          <p className="text-green-700 text-xs">Password: 123456</p>
+        </div>
+
         <button
           type="submit"
-          className="mt-2 w-full h-11 rounded-full text-white bg-indigo-500 hover:opacity-90 transition-opacity"
+          disabled={submitting}
+          className="mt-2 w-full h-11 rounded-full text-white bg-green-500 hover:opacity-90 transition-opacity disabled:opacity-50"
         >
-          {urlState === "login" ? "Login" : "Sign up"}
+          {submitting ? "Signing in..." : (urlState === "login" ? "Login" : "Sign up")}
         </button>
 
         <p className="text-gray-500 text-sm mt-3 mb-11">
@@ -106,7 +120,7 @@ const Login = () => {
             : "Already have an account?"}{" "}
           <span
             onClick={toggleState}
-            className="text-indigo-500 hover:underline cursor-pointer"
+            className="text-green-500 hover:underline cursor-pointer"
           >
             click here
           </span>

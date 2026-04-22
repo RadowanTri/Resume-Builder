@@ -8,7 +8,7 @@ const Banner = () => {
           <span className="px-3 py-1 rounded-lg text-white bg-green-600 mr-2">
             New
           </span>
-          AI Website Builder
+          AI Resume Builder
         </p>
       </div>
     </div>
