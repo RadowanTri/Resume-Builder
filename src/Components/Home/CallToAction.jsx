@@ -18,10 +18,10 @@ const CallToAction = () => {
           Join over 10,000 professionals who trust TRI to tell their story. Free to start — no credit card required.
         </p>
 
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-2.5">
           <a
             href="/app"
-            className="bg-white text-green-700 font-semibold rounded-full px-10 h-12 flex items-center hover:bg-green-50 active:scale-95 transition-all shadow-md"
+            className="bg-white text-green-700 font-semibold rounded-full px-10 sm:px-4 h-12 flex items-center hover:bg-green-50 active:scale-95 transition-all shadow-md"
           >
             Create my resume — it's free
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-2">
@@ -30,7 +30,7 @@ const CallToAction = () => {
           </a>
           <a
             href="/Resume-Builder/login"
-            className="border border-white/50 text-white rounded-full px-8 h-12 flex items-center hover:bg-white/10 active:scale-95 transition-all"
+            className="border border-white/50 text-white rounded-full px-8 sm:px-3.5 h-12 flex items-center hover:bg-white/10 active:scale-95 transition-all"
           >
             Sign in
           </a>

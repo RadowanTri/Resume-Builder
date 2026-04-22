@@ -268,10 +268,10 @@ const Hero = () => {
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex items-center gap-4 ">
+        <div className="flex items-center gap-3 ">
           <a
             href="/"
-            className="bg-green-500 hover:bg-green-600 text-white rounded-full px-9 h-12 m-1 ring-offset-2 ring-1 ring-green-400 flex items-center transition-colors"
+            className="bg-green-500 hover:bg-green-600 text-white rounded-full px-9 sm:px-4 h-12 m-1 ring-offset-2 ring-1 ring-green-400 flex items-center transition-colors"
           >
             Get started
             <svg
@@ -291,7 +291,7 @@ const Hero = () => {
               <path d="m12 5 7 7-7 7"></path>
             </svg>
           </a>
-          <button className="flex items-center gap-2 border border-slate-400 hover:bg-green-50 transition rounded-full px-7 h-12 text-slate-700">
+          <button className="flex items-center gap-2 border border-slate-400 hover:bg-green-50 transition rounded-full px-7 sm:px-3 h-12 text-slate-700">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
