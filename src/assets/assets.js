@@ -4,8 +4,8 @@ export const dummyResumeData = [
     {
         // ----------------------------------------------------- Resume 1 ------------------------------------------------------
         personal_info: {
-            full_name: "Alex Smith",
-            email: "alex@example.com",
+            full_name: "Radowan Bhuiyan",
+            email: "radowan@example.com",
             phone: "0 123456789",
             location: "NY, USA",
             linkedin: "https://www.linkedin.com",
@@ -15,7 +15,7 @@ export const dummyResumeData = [
         },
         _id: "68d2a31a1c4dd38875bb037e",
         userId: "68c180acdf1775dfd02c6d87",
-        title: "Alex's Resume",
+        title: "Radowan's Resume",
         public: true,
         professional_summary: "Highly analytical Data Analyst with 6 years of experience transforming complex datasets into actionable insights using SQL, Python, and advanced visualization tools. ",
         skills: ["JavaScript", "React JS", "Full Stack Development", "Git", "GitHub", "NextJS", "Express", "NodeJS", "TypeScript"],
@@ -42,10 +42,10 @@ export const dummyResumeData = [
         education: [
             {
                 institution: "Example Institute of Technology",
-                degree: "B.TECH",
+                degree: "BSC",
                 field: "CSE",
                 graduation_date: "2023-05",
-                gpa: "8.7",
+                gpa: "3.7",
                 _id: "68d2a31a1c4dd38875bb0380"
             },
             {
@@ -87,24 +87,24 @@ export const dummyResumeData = [
     {
         // ----------------------------------------------------- Resume 2 ------------------------------------------------------
         personal_info: {
-            full_name: "Jordan Lee",
-            email: "jordan.lee@example.com",
+            full_name: "Timerni",
+            email: "timerni.lee@example.com",
             phone: "0 987654321",
             location: "San Francisco, CA, USA",
-            linkedin: "https://www.linkedin.com/in/jordanlee",
+            linkedin: "https://www.linkedin.com/in/Timerni",
             website: "https://www.jordanlee.dev",
             profession: "Frontend Engineer",
             image: dummy_profile
         },
         _id: "78e3b42c2d5ff49286cc148f",
         userId: "78d2e0bdcf2886efg03e7e98",
-        title: "Jordan's Resume",
+        title: "timerni's Resume",
         public: true,
         professional_summary: "Creative and detail-oriented Frontend Engineer with 5+ years of experience crafting responsive, user-centric web applications using React, Vue, and modern CSS frameworks.",
         skills: ["HTML5", "CSS3", "JavaScript", "React", "Vue.js", "SASS", "Tailwind CSS", "Figma", "Web Accessibility", "REST APIs"],
         experience: [
             {
-                company: "TechSpark Inc.",
+                company: "Time Resarch & Innovation.",
                 position: "Lead Frontend Engineer",
                 start_date: "2022-02",
                 end_date: "Present",
@@ -113,7 +113,7 @@ export const dummyResumeData = [
                 _id: "78e3b42c2d5ff49286cc1490"
             },
             {
-                company: "PixelForge Labs",
+                company: "Time Resarch & Innovation",
                 position: "Frontend Developer",
                 start_date: "2018-09",
                 end_date: "2022-01",
@@ -124,7 +124,7 @@ export const dummyResumeData = [
         ],
         education: [
             {
-                institution: "University of Digital Arts",
+                institution: "University of Dhaka",
                 degree: "B.Sc.",
                 field: "Computer Science",
                 graduation_date: "2018-06",
@@ -162,18 +162,18 @@ export const dummyResumeData = [
     {
         // ----------------------------------------------------- Resume 3 ------------------------------------------------------
         personal_info: {
-            full_name: "Riley Morgan",
-            email: "riley.morgan@example.com",
+            full_name: "Zakir khan",
+            email: "zakir@example.com",
             phone: "0 1122334455",
             location: "Austin, TX, USA",
-            linkedin: "https://www.linkedin.com/in/rileymorgan",
+            linkedin: "https://www.linkedin.com/in/zakir",
             website: "https://www.rileym.dev",
             profession: "Backend Developer",
             image: dummy_profile
         },
         _id: "89f4c53d3e6gg59397dd259g",
         userId: "89e3f1cedg3997fgh14f8f09",
-        title: "Riley's Resume",
+        title: "Zakir's Resume",
         public: true,
         professional_summary: "Dedicated Backend Developer with 7+ years of experience building secure, high-performance APIs and microservices using Node.js, Python, and PostgreSQL. Passionate about scalability, automation, and clean architecture.",
         skills: ["Node.js", "Python", "PostgreSQL", "MongoDB", "Docker", "Kubernetes", "CI/CD", "Redis", "GraphQL", "AWS"],
